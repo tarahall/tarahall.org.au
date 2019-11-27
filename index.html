@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Tara Hall</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/9af51947ad.js" crossorigin="anonymous"></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Arial", Helvetica
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background: url(img/tara_hall.jpg);
+
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+
+
+</head>
+
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">TARA HALL</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#tranquillity" class="w3-bar-item w3-button"><i class="far fa-life-ring"></i> TRANQUILLITY</a>
+        <a href="#facilities" class="w3-bar-item w3-button"><i class="fa fa-user"> </i> FACILITIES</a>
+        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#faq" class="w3-bar-item w3-button"><i class="far fa-question-circle"></i> FAQs</a>
+
+      </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#tranquillity" onclick="w3_close()" class="w3-bar-item w3-button">TRANQUILLITY</a>
+    <a href="#facilities" onclick="w3_close()" class="w3-bar-item w3-button">FACILITIES</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="< w3-display-container" id="home">
+  <br>
+
+    <!-- Slide Show -->
+    <div class="w3-content w3-display-container w3-padding-64">
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/01.jpg?raw=true" style="width:100%">
+        <div class="w3-display-middle w3-animate-fading w3-wide w3-xxlarge w3-container w3-padding-16 ">
+          TARA HALL
+        </div>
+      </div>
+
+
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/02.jpg?raw=true" style="width:100%">
+       
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/03.jpg?raw=true" style="width:100%">
+       
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/04.jpg?raw=true style="width:100%">
+       
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/05.jpg?raw=true" style="width:100%">
+       
+      </div>
+
+       <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/06.jpg?raw=true" style="width:100%">
+        
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/07.jpg?raw=true" style="width:100%">
+        
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/08.jpg?raw=true" style="width:100%">
+       
+      </div>
+        <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/09.jpg?raw=true" style="width:100%">
+        
+      </div>
+
+   <div class="w3-display-container mySlides">
+        <img src="https://github.com/tarahall/images/blob/master/10.jpg?raw=true" style="width:100%">
+      
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+
+  </header>
+  <div="main">
+    <!-- Tranquillity Section -->
+    <div class="w3-container w3-center" style="padding:128px 16px" id="tranquillity">
+      <p class="w3-xxlarge w3-panel w3-wide"><b>Beautiful Tranquillity<b></p>
+      <div class="w3-large  w3-center">
+        <p>Tara hall is a newly renovated space with plenty of natural light, outside courtyard and fully equipped
+          kitchen.</p>
+
+        <p>With 130 square meters of space and a purpose-built stage it is perfect for any small to mid-size function.
+        </p>
+
+        <p>Tara Hall is located at the rear of a heritage listed chapel built in 1866 which is now utilized as a
+          Buddhist centre.</p>
+        <p>Tara hall has a light airy and tranquil ambience and is located only 10 minutes from the city on Magill road.
+        </p>
+
+        <p>Seating capacity is 100 and standing 150. AV equipment and seating for up to 100 is available upon request.
+        </p>
+        <p><em>Tara Hall is an alcohol and smoke free venue.</em></p>
+      </div>
+    </div>
+
+
+    <!-- Facilities Section -->
+    <div class="w3-container w3-center w3-large" style="padding:128px 16px" id="facilities">
+      <h3 class="w3-center">THE FACILITIES</h3>
+      <p class="w3-center w3-large">Key features </p>
+      <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+          <i class="fas fa-bread-slice w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">Kitchen & Catering</p>
+          <p>In the well-equipped modern kitchen with plenty of bench space,
+            you will have no problems catering for a small group or a crowd.
+            There is a large refrigerator and cooktop for BYO or External Catering.
+            Cooking utensils are aplenty.</p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fas fa-film w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Audio/Video</p>
+          <p>There is a raised stage suitable for presentations,
+            lectures or demonstrations, or even a performing group.
+            If required,
+            there is all the equipment to make your event hi-tech and professional.</p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fas fa-ban w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Alcohol Free / Smoke Free</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pricing Section -->
+    <div class="w3-row-padding" id="pricing">
+      <div class="w3-center w3-padding-64">
+        <h2>Pricing </h2>
+        <p></p>
+      </div>
+
+      <div class="w3-third w3-margin-bottom w3-large">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32">Rate</li>
+          <li class="w3-padding-16"><b>$ 35</b> Per Hour</li>
+          <li class="w3-padding-16"><b>$ 200</b> Bond</li>
+          <li class="w3-padding-16"><b>$ 50 </b> AV Projector & Screen</li>
+          <li class="w3-padding-16"><b>$ 50</b> Kitchen Hire</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 35</h2>
+            <span class="w3-opacity">Hire Per Hour</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="#contact" onclick="w3_close()" class="w3-button w3-green w3-padding-large">Enquire Now</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom w3-large">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32">Day</li>
+          <li class="w3-padding-16"><b>$ 225 </b> For 8 Hours</li>
+          <li class="w3-padding-16"><b>$ 200</b> Bond</li>
+          <li class="w3-padding-16"><b>$ 50 </b> AV Projector & Screen</li>
+          <li class="w3-padding-16"><b>$ 50</b> Kitchen Hire</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 225</h2>
+            <span class="w3-opacity">Day Hire (8 hours)</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+             <a href="#contact" onclick="w3_close()" class="w3-button w3-green w3-padding-large">Enquire Now</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom w3-large">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-blue w3-xlarge w3-padding-32">Terms and Conditions</li>
+          <li class="w3-padding-16"><b></b> Full payment required at time of booking. </li>
+          <li class="w3-padding-16"><b></b> Cancellation more than 28 days prior to event "No-Fees" </li>
+          <li class="w3-padding-16"><b></b> Cancellation 28 to 14 days prior to event 50%</li>
+          <li class="w3-padding-16"><b></b> Cancellation within 14 days 100%</li>
+          <li class="w3-padding-16"><b></b> Additional $200 damage security bond required at time of booking. </li>
+          <li class="w3-padding-16"><b></b> Bond will be returned after completion of event once the venue has been
+            inspected and is confirmed to have been returned in it’s original state.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="#contact" onclick="w3_close()" class="w3-button w3-green w3-padding-large">Enquire Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+      <br>
+      <br>  
+
+      <!-- Embided Google Form -->
+      <style>
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
+      </style>
+
+ <div class="w3-container w3-center w3-large" style="padding:128px 16px" id="contact">
+   <div style="--aspect-ratio: 16/9;">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeFd1cKurbhN3Tzx31ZQvWrzRZ33zC7KRQb_c9gLV2FSs4ysw/viewform?embedded=true"
+        width="2000" height="900" frameborder="0" marginheight="0" marginwidth="0">
+        </iframe>
+    </div>
+
+ 
+
+
+
+        <!-- Image Link of location/map -->
+        <a href="https://goo.gl/maps/ZihSHfPpTwewZt28A">
+          <img src="https://github.com/tarahall/images/blob/master/map.png?raw=true" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+        </a>
+      </div>
+    </div>
+
+
+
+    <!--- FAQ SECTION -->
+    <div class="w3-container w3-light-grey" id="faq">
+      <div class="w3-cell-row">
+        <div class="w3-container w3-cell">
+          <h1 class="w3-xxxlarge"> FAQs</h1>
+        </div>
+
+        <!-- ToolTip FAQ --->
+
+        <div class="w3-container w3-left-align  w3-wide w3-xxlarge w3-cell">
+
+          <h4 class="w3-tooltip">Q1: Can I inspect the venue? <span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue ">
+              <b> Venue can be inspected between 9.30 -2.30pm Mon to Friday.
+                <br> Go to Buddha House at the front of the Hall. <br> There an office volunteer will be happy to show
+                you around.</b></span></h4>
+
+
+
+          <h4 class="w3-tooltip">Q2: How big is Tara Hall or how many people can the hall hold? <span
+              style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag w3-blue ">The hall is 12m long by 8m
+              wide with a small stage.
+              <br> There is seating room for 80 and it has been measured to hold 35 yoga mats.
+              <br>More people can be accommodated if seated on the floor space in conjunction with chairs</span> </h4>
+
+
+          <h4 class="w3-tooltip">Q3: Can we access the kitchen?<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue">Kitchen hire of $50 gives full access to the kitchen.
+              <br>If kitchen is not hired, you will have access to a mini fridge and an urn, cutlery, cups and
+              teaspoons.
+              <br>Hirers provide tea break supplies and clean up after event.</span> </h4>
+
+          <h4 class="w3-tooltip">Q4: Are there yoga mats, cushions, and blankets?<span
+              style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag w3-blue">The basic hire provides
+              trestle tables, chairs, white board and a flip chart.
+            </span> </h4>
+
+          <h4 class="w3-tooltip">Q5: Is there Audio/Video equipment, wi-fi?<span
+              style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag w3-blue">There is free wi-fi.
+              <br>Audio/Video hire of $50 will provide access to a projector and screen, <br> PA sound system with a
+              hands-free microphone.
+            </span> </h4>
+
+          <h4 class="w3-tooltip">Q6: Is the hall airconditioned?<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue">The hall has gas heating and evaporative cooling with fans. <br>The kitchen
+              has reverse cycle air conditioning.
+            </span> </h4>
+
+          <h4 class="w3-tooltip">Q7: Can we use the courtyard garden?<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue">Yes, included in hire is full access to the eastern courtyard with outdoor
+              seating
+            </span> </h4>
+
+          <h4 class="w3-tooltip">Q8: We are having a fundraiser can people bring their own wine?<span
+              style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag w3-blue"> In line with the Buddhist
+              principles of the property, <br> Tara Hall is an Alcohol and Smoke Free venue. </span> </h4>
+
+          <h4 class="w3-tooltip">Q9: Is there on-site parking?<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue">There are 11 onsite parking, <br> and there are plenty of parking on Magill
+              Road and nearby streets. <br> We advise allow time for offsite parking. </span> </h4>
+
+          <h4 class="w3-tooltip">Q5: ##<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue"> ## </span> </h4>
+          <h4 class="w3-tooltip">Q5: ##<span style="position:absolute;left:0;bottom:18px"
+              class="w3-text w3-tag w3-blue"> ## </span> </h4>
+
+        </div>
+
+       
+      </div>
+    </div>
+   
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.camyelon.com" target="_blank">CAMEYLON</a></p>
+</footer>
+
+      <script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+          mySidebar.style.display = "none";
+        }
+      </script>
+      
+</body>
+
+</html>
