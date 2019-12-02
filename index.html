@@ -289,7 +289,11 @@
       <br>  
 
       <!-- Embided Google Form -->
-      <style>
+
+
+
+  <style>
+  /*
 [style*="--aspect-ratio"] > :first-child {
   width: 100%;
 }
@@ -312,29 +316,51 @@
     height: 100%;
   }  
 }
-      </style>
+ */     </style>
+
+<style>
+iframe[seamless]{
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
+</style>
 
  <div class="w3-container w3-center w3-large" style="padding:128px 16px" id="contact">
-   <div style="--aspect-ratio: 16/9;">
-      <iframe
+<iframe seamless="seamless" frameborder="0" allowtransparency="true" scrolling="yes" 
+title="google" width="100%" height="900px" boarder="0" 
+src="https://docs.google.com/forms/d/e/1FAIpQLSeFd1cKurbhN3Tzx31ZQvWrzRZ33zC7KRQb_c9gLV2FSs4ysw/viewform?embedded=true">
+</iframe>
+</div>
+
+
+
+ <!--
+
+ <div class="w3-container w3-center w3-large" style="padding:128px 16px" id="contact">
+   <div 
+     <center> <iframe style="--aspect-ratio: 16/9;"
         src="https://docs.google.com/forms/d/e/1FAIpQLSeFd1cKurbhN3Tzx31ZQvWrzRZ33zC7KRQb_c9gLV2FSs4ysw/viewform?embedded=true"
-        width="2000" height="900" frameborder="0" marginheight="0" marginwidth="0">
-        </iframe>
+       >
+        </iframe></center>
     </div>
+  </div>
 
- 
+ -->
 
 
-
+<div class="w3-container w3-center w3-large" style="padding:128px 16px">
         <!-- Image Link of location/map -->
         <a href="https://goo.gl/maps/ZihSHfPpTwewZt28A">
           <img src="https://github.com/tarahall/images/blob/master/map.png?raw=true" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
         </a>
       </div>
     </div>
+</dov>
 
 
-
+<div class="w3-container w3-center w3-large" style="padding:128px 16px">
     <!--- FAQ SECTION -->
     <div class="w3-container w3-light-grey" id="faq">
       <div class="w3-cell-row">
@@ -406,7 +432,7 @@
        
       </div>
     </div>
-   
+   </div>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
